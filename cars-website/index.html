@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car World | Premium Dealership</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Smooth scrolling for page navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section Styling */
+        .hero-section {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        /* General Section Spacing */
+        section {
+            padding: 100px 0;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: #ffc107 !important; /* Gold color for brand */
+        }
+
+        #about img {
+            transition: transform 0.3s;
+        }
+
+        #about img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #111;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#home">CAR WORLD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#more">More</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1 class="display-2 fw-bold">Drive Your Passion</h1>
+            <p class="fs-4 mb-4">Discover the finest collection of luxury and sports cars.</p>
+            <a href="#contact" class="btn btn-warning btn-lg px-5">Book a Test Drive</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-5">About Us</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" class="img-fluid rounded shadow" alt="About Car">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="text-primary">Quality & Trust</h3>
+                    <p class="lead text-muted mt-3">
+                        Car World is not just a dealership; it's a legacy. We have been providing premium automobiles for over two decades. Our mission is to provide the perfect match for every driver.
+                    </p>
+                    <p>Every car in our showroom undergoes a 150-point quality check to ensure you get nothing but the best performance and safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="more" class="bg-light">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-5">Why Choose Us?</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <h4 class="fw-bold">Fast Finance</h4>
+                        <p>Instant loan approvals with minimal paperwork and lowest interest rates.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <h4 class="fw-bold">Expert Service</h4>
+                        <p>Certified mechanics to keep your car running like it's brand new.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <h4 class="fw-bold">Global Shipping</h4>
+                        <p>We deliver your dream car to any corner of the country safely.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-5">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="card shadow p-4 border-0">
+                        <form id="contactForm">
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Full Name" required>
+                                </div>
+                                <div class="col">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select">
+                                    <option selected disabled>Interested in...</option>
+                                    <option>Buying a Car</option>
+                                    <option>Selling a Car</option>
+                                    <option>Service/Repair</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-lg w-100">Send Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center">
+        <p class="mb-0">© 2026 Car World | Designed with ❤️ for Speed.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Form Submission Logic
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Success! Our team will contact you within 24 hours.');
+            this.reset();
+        });
+
+        // Close mobile menu when a link is clicked
+        const navLinks = document.querySelectorAll('.nav-link');
+        const menuToggle = document.getElementById('navbarNav');
+        const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { bsCollapse.hide() });
+        });
+    </script>
+
+</body>
+</html>
